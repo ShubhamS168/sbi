@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <title>AgriLend Bank - User Details</title>
+</head>
+<body>
+    <div class="user-details-container">
+        <h1>AgriLend Bank</h1>
+        <h2>Provide Your Details</h2>
+        <form id="user-details-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="aadhaar">Aadhaar Number:</label>
+                <input type="text" id="aadhaar" name="aadhaar" required>
+            </div>
+            <div class="form-group">
+                <label for="land-record">Upload Land Record:</label>
+                <input type="file" id="land-record" name="land-record" accept=".pdf, .jpg, .jpeg, .png" required>
+                <small>Accepted formats: PDF, JPG, JPEG, PNG</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

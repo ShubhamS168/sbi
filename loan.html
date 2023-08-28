@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loan.css">
+    <title>AgriLend Connect - Verify Land Records</title>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="sbi.jpg" alt="AgriLend Connect Logo">
+            <h1>AgriLend Connect</h1>
+        </div>
+    </header>
+
+    <!-- Land Records Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <h2>Upload Land Records</h2>
+            <form id="land-records-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="land-records">Select Land Records (PDF or Image):</label>
+                    <input type="file" id="land-records" name="land-records" accept=".pdf, .jpg, .jpeg, .png" required>
+                </div>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Aadhaar Verification Section -->
+    <section class="verification-section" id="verification">
+        <div class="container">
+            <h2>Aadhaar Verification</h2>
+            <form id="aadhaar-verification-form">
+                <div class="form-group">
+                    <label for="aadhaar-number">Enter Aadhaar Number:</label>
+                    <input type="text" id="aadhaar-number" name="aadhaar-number" required>
+                </div>
+                <button type="submit">Verify</button>
+                <div class="verification-result" id="verification-result">
+                    <!-- Verification result message will appear here -->
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AgriLend Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="loan.js"></script>
+</body>
+</html>

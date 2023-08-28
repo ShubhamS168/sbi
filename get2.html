@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="get.css">
+    <title>AgriLend Connect</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="sbi.jpg" alt="AgriLend Connect Logo">
+            <h1>AgriLend Connect</h1>
+        </div>
+    </header>
+
+    <!-- Registration and Login Form Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="registration-container">
+                <h2>Create an Account</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="login-container">
+                <h2>Already have an account?</h2>
+                <p>Log in to access your dashboard.</p>
+                <button id="login-button">
+                     <a href="in.html" class="cta-button">Log In</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply for Loan Section 
+ 
+    <section class="apply-section" id="apply">
+            <div class="container">
+                <h2>To Apply for a Loan</h2>
+                <button id="apply-button" class="cta-button">
+                    <a href="login.html" class="cta-button">APPLY</a>
+                    </button>
+            </div>
+    </section>  -->
+
+
+    <!-- User Dashboard Section -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="dashboard-container">
+            <h1>Welcome, <span id="user-name"></span>!</h1>
+            <p>Your dashboard content goes here.</p>
+            <button id="logout-button">Log Out</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
